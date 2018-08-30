@@ -4,7 +4,7 @@
 require 'octokit'
 
 # note: !!! DO NOT EVER USE HARD-CODED VALUES 
-ACC_TOK = '4bb4fb8c683235929fa81819bf544f85e657ce1d'
+ACC_TOK = ''
 client = Octokit::Client.new :access_token => ACC_TOK
 
 results = client.repos("harsha-ravuri", per_page: 100, page: 1) #just to get the pages
